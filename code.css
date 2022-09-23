@@ -4,84 +4,64 @@
 
 }
 body{
-background-color: hsl(212, 45%, 89%);
-}
-
-.wrapper{
-    
-    height: 600px;
+    background-color: hsl(212, 45%, 89%);
+    min-height: 100vh;
     display: flex;
+    flex-flow: column;
     align-items: center;
     justify-content: center;
+
 }
 
-.contain{
+main{
     background-color: hsl(0, 0%, 100%);
-
-    width: 200px;
-    height: 320px;
-    border-radius: 10px;
+    width: 13em;
+    height: 22em;
+    border-radius: 0.5em;
+    padding: 0.7em;
+    text-align: center;
 }
 
 img{
-    width: 200px;
-    display: block;
-    border-radius: 15px;
-    padding: 8px;
-    box-sizing: border-box;
+    width: 100%;
+    height: 13em;
+    border-radius: 0.5em;
+  
 }
 
-
-section h1{
-    text-align: center;
-    font-size: 16px;
-    color: hsl(218, 44%, 22%);
+h1{
+    font-size: 1.1em;
+    padding-top: 1em;
     font-family: 'Outfit',sans-serif;
-
+    color: hsl(218, 44%, 22%);
 }
 
-section{
-    padding: 0 8px 0 8px;
-}
-
-section p{
-    text-align: center;
-    font-size: 13px;
+p{
+    font-size: 0.7em;
+    padding: 1em 1.8em 0 1.8em;
     color: hsl(220, 15%, 55%);
-    padding-top: 8px;
+    
 }
 
-@media screen and (min-width: 375px){
-    
-    .contain{
-        height: 450px;
-        width: 300px;
-        
-        
+footer{
+    padding-top: 1.5em;
+}
+
+@media screen and (max-width: 375px){
+    main{
+        width: 18em;
+        height: 27em;
     }
 
-    .wrapper{
-        height: 550px;
+    img{
+        height: 15em;
     }
 
-    img {
-        width: 300px;
-        display: block;
-        border-radius: 25px;
-        padding: 15px;
-       
+    h1{
+        font-size: 1.6em;
     }
 
-    section h1 {
-        font-size: 1.3em;
-        padding: 7px 17px 0 17px;
-
+    p{
+        font-size: 1em;
     }
-
-    section p {
-        font-size: 15px;
-        padding: 10px 19px 10px 19px;
-        width: 240px;
-
-   }
 }
